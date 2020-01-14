@@ -486,6 +486,12 @@ class AzureCli < Formula
   resource "jmespath" do
     url "https://files.pythonhosted.org/packages/2c/30/f0162d3d83e398c7a3b70c91eef61d409dea205fb4dc2b47d335f429de32/jmespath-0.9.4.tar.gz"
     sha256 "bde2aef6f44302dfb30320115b17d030798de8c4110e28d5cf6cf91a7a31074c"
+    
+    # Fix warnings "SyntaxWarning: "is" with a literal. Did you mean "=="?" for python 3.8
+    patch do
+      url "https://github.com/jmespath/jmespath.py/pull/188.patch?full_index=1"
+      sha256 "f56128dc46ca5b12f62098753f6a71646c8c85d0814275dcfdf465a1ae67da62"
+    end
   end
 
   resource "jsmin" do
