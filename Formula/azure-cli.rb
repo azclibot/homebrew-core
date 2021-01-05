@@ -16,10 +16,10 @@ class AzureCli < Formula
 
   bottle do
     cellar :any
-    sha256 "bf3689587ffbc164ecba114155a0f7459813da461124ae20ac0595691e82bb4c" => :big_sur
-    sha256 "1b01f59862c9dfcf8b7dc9554495b7f6f67d1b709853a87fde7792a1e52a4308" => :arm64_big_sur
-    sha256 "e844bbe27dd0a43d81f8f600581e5f2cda944e2be2d9676f70d49049cef6f844" => :catalina
-    sha256 "73e285cf2968bfd729c87bcbc21181cb261caa146fc8d31d651436dbd1e97203" => :mojave
+    sha256 "d2ebb10e504920e00d1854dab752ca59f93eefc0248ccd488d63d0b94842b19d" => :big_sur
+    sha256 "50e4af4930b1d6daf097c0ca243bb41ba7314601e9f7a94d661481f8e4687ad9" => :arm64_big_sur
+    sha256 "23beb5995246ea7e75d6738e29a5d9be1b25d3b9bcb568e67b5b64b7b3de7cc4" => :catalina
+    sha256 "0c6d527cf0fc0759478a1c1d4e17cea9f7341aaac704bb9f653c0309f78573ba" => :mojave
   end
 
   depends_on "openssl@1.1"
@@ -483,8 +483,8 @@ class AzureCli < Formula
   end
 
   resource "cffi" do
-    url "https://files.pythonhosted.org/packages/66/6a/98e023b3d11537a5521902ac6b50db470c826c682be6a8c661549cb7717a/cffi-1.14.4.tar.gz"
-    sha256 "1a465cbe98a7fd391d47dce4b8f7e5b921e6cd805ef421d04f5f66ba8f06086c"
+    url "https://files.pythonhosted.org/packages/05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c/cffi-1.14.0.tar.gz"
+    sha256 "2d384f4a127a15ba701207f7639d94106693b6cd64173d6c8988e2c25f3ac2b6"
   end
 
   resource "chardet" do
